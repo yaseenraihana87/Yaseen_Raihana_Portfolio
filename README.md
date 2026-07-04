@@ -4,7 +4,7 @@ A production-ready, premium portfolio website built for an AI Engineer / Machine
 
 **Live demo:** _add your deployed URL here_
 
-![Portfolio preview](public/og-image.png)
+![Portfolio preview](https://yaseen-raihana-portfolio.vercel.app/)
 
 ---
 
