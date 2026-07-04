@@ -57,17 +57,7 @@ export default function Projects() {
               transition={{ duration: 0.4, delay: i * 0.05 }}
             >
               <Card className="h-full flex flex-col">
-                <div className="relative h-44 rounded-xl overflow-hidden mb-5 bg-gradient-to-br from-blue-500/15 to-purple-500/15 flex items-center justify-center">
-                  <span className="font-mono text-xs text-muted-foreground/60">
-                    [ {project.slug}.png ]
-                  </span>
-                  <div className="absolute top-3 right-3">
-                    <Badge className="!bg-background/70">
-                      <CircleDot className={cn("h-3 w-3 mr-1", statusStyles[project.status])} />
-                      {project.status}
-                    </Badge>
-                  </div>
-                </div>
+                
 
                 <div className="flex items-center gap-2 mb-2">
                   <span className="text-xs font-mono text-primary">{project.category}</span>

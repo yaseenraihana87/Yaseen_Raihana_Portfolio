@@ -65,8 +65,8 @@ export default function Hero() {
             Open to internships &amp; opportunities
           </span>
 
-          <h1 className="mt-6 text-4xl sm:text-5xl md:text-6xl font-semibold tracking-tight leading-[1.1]">
-            Hi, I&apos;m {siteConfig.name.split(" ")[0]} —{" "}
+          <h1 className="mt-6 text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight leading-[1.1]">
+            Hi, I&apos;m {siteConfig.name} {" "}
             <span className="block mt-2 gradient-text">
               {typed}
               <span className="inline-block w-[2px] h-[0.9em] bg-primary ml-1 align-middle animate-pulse" />
@@ -120,23 +120,7 @@ export default function Hero() {
           </div>
         </motion.div>
 
-        <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8, ease: "easeOut", delay: 0.15 }}
-          className="relative mx-auto"
-        >
-          <div className="relative h-72 w-72 md:h-96 md:w-96 rounded-[2rem] glass overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-purple-500/20" />
-            <div className="absolute inset-0 flex items-center justify-center text-muted-foreground/50 text-sm font-mono">
-              [ profile-image.jpg ]
-            </div>
-          </div>
-          <div className="absolute -bottom-6 -left-6 glass rounded-2xl px-5 py-4">
-            <p className="text-2xl font-semibold gradient-text">3 Projects</p>
-            <p className="text-xs text-muted-foreground mt-1">ML &amp; full-stack builds</p>
-          </div>
-        </motion.div>
+       
       </div>
 
       <motion.button
