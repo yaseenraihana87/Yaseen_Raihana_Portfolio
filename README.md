@@ -2,9 +2,9 @@
 
 A production-ready, premium portfolio website built for an AI Engineer / Machine Learning Engineer audience. Dark-themed, glassmorphic, and fully responsive — built with Next.js 15, TypeScript, Tailwind CSS, and Framer Motion.
 
-**Live demo:** _add your deployed URL here_
+**Live demo:** https://yaseen-raihana-portfolio.vercel.app/
 
-![Portfolio preview](https://yaseen-raihana-portfolio.vercel.app/)
+![Portfolio preview]
 
 ---
 
