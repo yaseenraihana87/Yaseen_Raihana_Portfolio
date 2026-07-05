@@ -49,16 +49,7 @@ function useTypingEffect(words: string[]) {
 
 export default function Hero() {
   const typed = useTypingEffect(typingWords);
-  const techStack = [
-  { label: "Python", slug: "python" },
-  { label: "Java", slug: "openjdk" },
-  { label: "React", slug: "react" },
-  { label: "TensorFlow", slug: "tensorflow" },
-  { label: "Spring Boot", slug: "spring" },       // instead of springboot
-  { label: "OpenCV", slug: "opencv" },
-  { label: "Scikit-learn", slug: "scikitlearn" },
-  { label: "MySQL", slug: "mysql" },
-];
+  
 
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden pt-32 pb-20">
@@ -87,7 +78,7 @@ export default function Hero() {
           </span>
 
           <h1 className="mt-6 text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight leading-[1.1]">
-            Hi, I'm {siteConfig.name}
+  Hi, I&apos;m {siteConfig.name}
             <span className="block mt-2 gradient-text">
               {typed}
               <span className="inline-block w-[2px] h-[0.9em] bg-primary ml-1 align-middle animate-pulse" />
@@ -163,15 +154,63 @@ export default function Hero() {
   className="relative h-[420px] hidden md:block"
 >
   {[
-    { label: "Python", slug: "python", top: "6%", left: "18%", delay: 0 },
-    { label: "Java", slug: "openjdk", top: "2%", left: "58%", delay: 0.4 },
-    { label: "React", slug: "react", top: "22%", left: "72%", delay: 0.8 },
-    { label: "TensorFlow", slug: "tensorflow", top: "38%", left: "8%", delay: 1.2 },
-    { label: "Spring Boot", slug: "springboot", top: "48%", left: "44%", delay: 0.2 },
-    { label: "OpenCV", slug: "opencv", top: "62%", left: "70%", delay: 0.6 },
-    { label: "Scikit-learn", slug: "scikitlearn", top: "72%", left: "22%", delay: 1.0 },
-    { label: "MySQL", slug: "mysql", top: "82%", left: "56%", delay: 1.4 },
-  ].map((tech) => (
+  {
+    label: "Python",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+    top: "6%",
+    left: "18%",
+    delay: 0,
+  },
+  {
+    label: "Java",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
+    top: "2%",
+    left: "58%",
+    delay: 0.4,
+  },
+  {
+    label: "React",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+    top: "22%",
+    left: "72%",
+    delay: 0.8,
+  },
+  {
+    label: "TensorFlow",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg",
+    top: "38%",
+    left: "8%",
+    delay: 1.2,
+  },
+  {
+    label: "Spring Boot",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg",
+    top: "48%",
+    left: "44%",
+    delay: 0.2,
+  },
+  {
+    label: "OpenCV",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg",
+    top: "62%",
+    left: "70%",
+    delay: 0.6,
+  },
+  {
+    label: "Scikit-learn",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg",
+    top: "72%",
+    left: "22%",
+    delay: 1.0,
+  },
+  {
+    label: "MySQL",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
+    top: "82%",
+    left: "56%",
+    delay: 1.4,
+  },
+].map((tech) => (
     <motion.div
       key={tech.label}
       className="absolute flex items-center gap-2 rounded-full border border-white/10 bg-white/5 backdrop-blur-md px-4 py-2 text-sm font-medium text-white shadow-lg"
@@ -193,14 +232,14 @@ export default function Hero() {
         },
       }}
     >
-      <Image
-        src={`https://cdn.simpleicons.org/${tech.slug}`}
-        alt={tech.label}
-        width={18}
-        height={18}
-        //className="opacity-90"
-        unoptimized
-      />
+     <Image
+  src={tech.icon}
+  alt={tech.label}
+  width={18}
+  height={18}
+  className="opacity-90"
+  unoptimized
+/>
 
       <span>{tech.label}</span>
     </motion.div>
