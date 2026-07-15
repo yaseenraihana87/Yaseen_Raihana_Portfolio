@@ -167,27 +167,35 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    slug: "fruitscan",
-    title: "FruitScan – AI-Based Fruit Freshness Detection",
-    category: "Computer Vision",
-    status: "Completed",
-    image: "/projects/fruitscan.svg",
-    description:
-      "A computer vision application that classifies fruits as Fresh or Rotten using Python, OpenCV, and Scikit-learn.",
-    problem:
-      "Manually checking fruit freshness is subjective and inconsistent — an automated visual classifier can give a fast, repeatable first read.",
-    features: [
-      "End-to-end ML pipeline: image preprocessing, feature extraction, training, evaluation, and real-time prediction",
-      "~103-dimensional feature vectors engineered from HSV color histograms, Laplacian texture variance, and BGR channel statistics",
-      "Random Forest classifier (100 decision trees) with an 80:20 train-test split",
-      "Real-time prediction through a Streamlit interface",
-      "Supports both synthetic and real-world Kaggle datasets, with room to extend to deep learning models like MobileNetV2"
-    ],
-    technologies: ["Python", "OpenCV", "Scikit-learn", "Streamlit", "Random Forest"],
-    results:
-      "Evaluated using accuracy, precision, recall, F1-score, and a confusion matrix on the held-out test split.",
-    githubUrl: "https://github.com/yaseenraihana87/fruit-freshness-detection"
-  },
+  slug: "fruitscan",
+  title: "FruitScan – AI-Based Fruit Freshness Detection",
+  category: "Computer Vision",
+  status: "Completed",
+  image: "/projects/fruitscan.svg",
+  description:
+    "An AI-powered computer vision application that classifies fruits as Fresh or Rotten using TensorFlow, MobileNetV2, OpenCV, and Streamlit.",
+  problem:
+    "Manual fruit freshness inspection is time-consuming and subjective. FruitScan provides fast, consistent, and AI-driven freshness classification using deep learning.",
+  features: [
+    "Built an end-to-end deep learning pipeline with image preprocessing, data augmentation, model training, evaluation, and deployment.",
+    "Implemented MobileNetV2 transfer learning to classify fresh and rotten apples, bananas, and oranges.",
+    "Supports both image upload and real-time webcam prediction using OpenCV with confidence scores.",
+    "Integrated LIME Explainable AI (XAI) to visualize the regions influencing model predictions.",
+    "Evaluated model performance using accuracy, precision, recall, F1-score, confusion matrix, and classification report."
+  ],
+  technologies: [
+    "Python",
+    "TensorFlow",
+    "Keras",
+    "MobileNetV2",
+    "OpenCV",
+    "Streamlit",
+    "LIME"
+  ],
+  results:
+    "Successfully trained a MobileNetV2-based classifier and deployed it as an interactive Streamlit application supporting real-time inference and explainable AI visualizations.",
+  githubUrl: "https://github.com/yaseenraihana87/Fruit-Freshness-Detection_2.0"
+},
   {
     slug: "diabetic-retinopathy-detection",
     title: "Diabetic Retinopathy Detection using Deep Learning",
@@ -318,10 +326,10 @@ export const githubStats = {
       url: "https://github.com/yaseenraihana87/diabetic-retinopathy-detection"
     },
     {
-      name: "fruit-freshness-detection",
-      description: "Computer vision pipeline classifying fruit freshness with OpenCV and Random Forest.",
-      url: "https://github.com/yaseenraihana87/fruit-freshness-detection"
-    }
+  name: "Fruit-Freshness-Detection_2.0",
+  description: "AI-powered fruit freshness detection using TensorFlow, MobileNetV2, OpenCV, and Streamlit with real-time image upload and webcam prediction.",
+  url: "https://github.com/yaseenraihana87/Fruit-Freshness-Detection_2.0"
+}
   ]
 };
 
